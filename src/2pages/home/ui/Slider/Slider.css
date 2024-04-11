@@ -1,0 +1,41 @@
+.home-movie-swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-movie-swiper .swiper-pagination-bullet-active {
+  /* scale: 1.5; */
+  /* transition: .5s; */
+}
+.home-movie-swiper .swiper-slide-active .slider-content{
+  scale: 1;
+  opacity: 1;
+}
+.home-movie-swiper .swiper-pagination-bullet {
+  background: yellow;
+  width: 15px;
+  height: 15px;
+}
+
+.thumbs-swiper {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 48vw;
+  pointer-events: all;
+}
+
+.thumbs-swiper .swiper-slide {
+  width: 200px !important;
+  height: 300px !important;
+}
+.thumbs-swiper img {
+  pointer-events: none;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,137 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.slider__backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.slider__backdrop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(7, 2, 28), rgba(0, 0, 0, 0.4));
+  box-shadow: inset 0px 83px 200px 50px rgba(0,0,0,0.3);
+}
+
+.slider__content {
+  position: relative;
+
+  max-width: 750px;
+  min-height: 300px;
+  padding: 0 6em;
+  margin-bottom: 50px;
+  padding-bottom: 3em;
+  scale: 0;
+  opacity: 0;
+  transition: .3s ease 0s;
+}
+
+.slider__overview {
+  font-family: "REM", sans-serif;
+  margin-top: 20px;
+  line-height: 1.3rem;
+  padding-right: 4rem;
+}
+.slider__genres {
+  font-family: "REM", sans-serif;
+  font-size: 17px;;
+  margin-top: 20px;
+}
+.slider__genres span{
+  color: rgb(241, 180, 56);
+  text-shadow: rgb(241, 180, 56) 0px 0px 10px;
+}
+
+.slider__title_block {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.slider__title {
+}
+.slider__title_main {
+  font-family: "REM", sans-serif;
+  display: flex;
+  gap: 10px;
+}
+.slider__title_even {
+  color: rgb(241, 180, 56);
+  text-shadow: 0 0 10px rgb(241, 180, 56);
+}
+.slider__title_odd {
+}
+
+.slider__realise-block {
+  display: flex;
+  gap: 15px;
+}
+.slider__realise {
+  color: #aaa1a1;
+  position: relative;
+  transition: 0.3s ease;
+}
+.slider__realise hr {
+  margin-top: 3px;
+  border-color: #aaa1a1;
+  transition: 0.3s ease 0.2s;
+}
+
+.slider__realise:hover {
+  color: rgb(241, 180, 56);
+  text-shadow: 0 0 10px rgb(241, 180, 56);
+  transform: translateY(-3px);
+  cursor: default;
+}
+
+.slider__realise:hover hr {
+  transform: translateY(-3px);
+  border-color: rgb(241, 180, 56);
+}
+.slider__average {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-left: 15px;
+}
+.slider__average_star {
+  transition: 0.3s ease;
+}
+.slider__average_star:hover {
+  fill: rgb(241, 180, 56);
+}
+.slider__btn {
+  position: absolute;
+  bottom: 0;
+
+  border-radius: 5px;
+  padding: 15px 30px;
+  
+  border: 1px solid rgb(241, 180, 56);
+  color: #fff;
+  font-family: "REM", sans-serif;
+  font-size: 16px;
+  background: rgb(241, 180, 56);
+
+  transition: .3s ease background;
+}
+
+.slider__btn:hover{
+  background: transparent;
+}

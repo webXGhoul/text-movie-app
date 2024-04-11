@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9998;
+
+  width: 100%;
+
+  /* padding: 40px 0px; */
+  overflow: hidden;
+  /* background-color: ; */
+  border-bottom-color: #ffffff5b;
+  border-bottom-style: solid;
+}
+.header__container {
+  /* padding: 40px 0 !important; */
+}
+.header__logo {
+  /* color: #fff; */
+  font-size: 2rem;
+  font-family: "REM", sans-serif;
+}
+.header__logo-letters {
+  color: var(--main-color);
+}
